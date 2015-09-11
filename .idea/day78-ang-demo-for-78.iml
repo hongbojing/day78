@@ -4,5 +4,6 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="day78-ang-demo-for-78 node_modules" level="project" />
   </component>
 </module>
