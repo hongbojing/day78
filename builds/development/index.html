@@ -1,13 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>day #</title>
-  <link rel="stylesheet" href="css/myStyle.css">
-  <link rel="stylesheet" href="css/anotherstyle.css">
+    <meta charset="UTF-8">
+    <title>day #</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
-<body>
+<body ng-app="myApp">
+<div ng-controller="myController as myCtrl">
+    <span ng-repeat="day in myCtrl.days" class="col-xs-2">
+        {{day}}
+        <p ng-repeat="period in myCtrl.periods">
+            <!--{{myCtrl.displayCourse(day, period)}}-->
+        </p>
+    </span>
+    <span ng-repeat="hongbo in myCtrl.resultsArray">
+        {{hongbo.code}}
+    </span>
 
+</div>
+
+<script src="js/lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 </body>
 </html>
